@@ -1,0 +1,164 @@
+@use "./module/variable"as var;
+input[type="submit"] {
+    appearance: none;
+    -webkit-appearance: none;
+    }
+  
+/* pタグの余白を削除 */
+.wpcf7-form p {
+    margin-bottom: 0;
+}
+/* 背景色（お好きな色に） */
+section.contact {
+}
+/*  フォームの幅（自由に変えてOK） */
+.contactForm {
+    width: 100%;
+    margin: 0 auto;
+}
+.wpcf7-form-control-wrap{
+    input{
+        @include var.fz(14);
+    }
+}
+/* 各項目の下部余白 */
+.contact_item {
+    margin-bottom: 26px;
+    p{
+        font-size: 0;
+        line-height: 0;
+    }
+}
+input, textarea{
+    width: 100%;
+    border-radius: 8px;
+    &::placeholder{
+        color: #b2b2b2;
+    }
+}
+textarea{
+    @include var.fz(12);
+    @include var.fz(12);
+    height: 230px;
+    line-height: 1.6;
+    &::placeholder{
+        color: #b2b2b2;
+    }
+}
+/* 項目名 */
+.label {
+    display: block;
+    @include var.fz(12);
+    font-weight: normal;
+
+    line-height: 1;
+    margin-bottom: .6rem;
+}
+/* 必須タグと任意タグ共通のスタイル */
+.label_tag {
+    @include var.fz(12);
+    font-weight: 900;
+
+    line-height: 1;    
+}
+/* 必須タグ */
+.label_must {
+    color: var.$red;
+    font-weight: normal;
+}
+/* 任意タグ */
+.label_option {
+    background-color: #888988;
+}
+/* 名前やメールアドレスなどユーザーが入力する箇所 */
+.inputs {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input[type="text"],input[type="email"] ,input[type="tel"], textarea{
+    border: none;
+    padding: 14px;
+    @include var.fz(14);
+}
+/* お問い合わせ内容を入力する箇所 */
+textarea.form-control {
+    border: none;
+    padding: .5rem;
+    height: 207px;
+    font-size: 1.8rem;
+}
+/* ボタン */
+.btnArea {
+    text-align: center;
+}
+input[type="submit"]{
+    background: var.$red;
+    border: none;
+    width: 164px;
+    color: #ffffff;
+    text-align: center;
+    @include var.fz(14);
+    line-height: 1;
+    text-indent: .5em;
+    font-weight: 900;
+    padding: 16px 0;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .3s;
+    
+}
+/* ボタンにホバーした時 */
+.heading{
+    display: none;
+}
+/* ローダー */
+.wpcf7 .ajax-loader {
+    display: block;
+    margin: 0 auto;
+}
+.btnArea{
+    p{
+        text-align: center;
+    }
+
+    span{
+        display: block;
+    }
+}
+
+
+/* モバイル版 */
+@media screen and (max-width: var.$bp) {
+    
+}
+
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output{
+    background: #FFF;
+    @include var.fz(13);
+    padding: 10px 16px;
+    margin-top: 0;
+    border-color: var.$red;
+    color:  var.$red;
+}
+.formnext{
+    display: none;
+}
+#wpcf7-f6-o1{
+
+
+}
+form.sent p{
+    display:none;
+}
+form.sent{
+    .formnext{
+        display: block!important;
+        p{
+            display: block!important;
+
+        }
+    }
+}

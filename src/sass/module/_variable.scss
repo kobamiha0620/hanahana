@@ -1,0 +1,99 @@
+$basic: #444444;
+$red: #FE2C55;
+$blue: #2162FA;
+$yel: #F4F000;
+$bp: 768px;
+$pcbp: 1214px;
+$perpul: #b38fe2;
+
+$imgpath: './images/';
+
+
+/* ANIMATION*/
+@keyframes fadeInAnime{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+//フェードイ
+.fadein {
+    animation-name: fadeInAnime;
+    animation-duration:3s;
+    animation-timing-function:ease;
+    animation-delay: 0.5s;
+    animation-direction:normal;
+}
+
+:root {
+    --main-bg-color: #ffff01;
+}
+
+/* （PC用）の記述 */
+@media screen and (max-width: $pcbp) {
+
+}
+
+
+.sp{
+    display: none;
+}
+.pc{
+    display: block;
+}
+
+/* （SP用）の記述 */
+@media screen and (max-width: $bp) {
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+}
+
+
+@mixin bg(){
+    background-size: 100% auto;
+    display: block;
+    white-space: nowrap;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+@mixin fz($size) {
+	font-size: calc($size / 16) + rem;
+}
+
+@keyframes fadeInAnime{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+// ## webp classes
+$webpClassName: '.is-webp';
+$noWebpClassName: '.is-no-webp';
+
+// $selector にする background-image で、webp を出し分ける
+// ※親要素に $webpClassName / $noWebpClassName が付与されることが前提
+// --------------------------------------------------------
+// $selector      {string} css セレクタ (default: jpg)
+// $imgpath      {string} 背景画像ファイルパス
+// $fileExtension {string} 背景画像拡張子
+@mixin webpBg($selector, $imgpath, $fileExtension: 'jpg') {
+  #{$noWebpClassName} #{$selector} {
+    background-image: url(#{$imgpath}.#{$fileExtension});
+  }
+  #{$webpClassName} #{$selector} {
+    background-image: url(#{$imgpath}.webp);
+  }
+}
