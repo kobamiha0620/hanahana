@@ -63,9 +63,9 @@ get_header(); ?>
             <div class="tiktok__inner--lin">
                 <h3 class="tiktok__inner--lttl">TWIN PLANETを選ぶ<br><span>3つのメリット</span></h3>
                 <ul class="tiktok__inner--list">
-                    <li>❶トップインフルエンサー<br>の起用</li>
-                    <li>❷創業17年の歴史と<br>データ分析力</li>
-                    <li>❸TikTok公式MCNとしての<br>取り組み</li>
+                    <li>❶&nbsp;トップインフルエンサー<br>の起用</li>
+                    <li>❷&nbsp;創業17年の歴史と<br>データ分析力</li>
+                    <li>❸&nbsp;TikTok公式MCNとしての<br>取り組み</li>
                 </ul>
             </div>
         </div>
@@ -82,8 +82,8 @@ get_header(); ?>
     </h2>
     <div class="cando__blc">
         <div class="cando__blcinner">
-
-            <h3 class="cando__subttl">❶ 著名タレント／<br>インフルエンサーの起用</h3>
+            <div class="cando__numblc">
+            <h3 class="cando__subttl">❶&ensp;著名タレント／<br>インフルエンサーの起用</h3>
             <div class="cando__feature"><span>check</span>
                 <p>自社所属のトップインフルエンサーMCやコンサルとして起用</p>
             </div>
@@ -476,7 +476,11 @@ get_header(); ?>
                     <?php endif; ?>
                 </ul>
             </div>
-            <h3 class="cando__subttl">❷ 創業17年の歴史と<br>データ分析力</h3>
+
+            </div>
+
+            <div class="cando__numblc">
+            <h3 class="cando__subttl">❷&ensp;創業17年の歴史と<br>データ分析力</h3>
             <div class="cando__feature"><span>check</span>
                 <p>⽇々の投稿管理／分析で“バズる”データを蓄積</p>
             </div>
@@ -553,8 +557,8 @@ get_header(); ?>
                 
                 </ul>
             </div>
-
-            <h3 class="cando__subttl">❸ TikTok公式MCN<br>としての取り組み</h3>
+            </div>
+            <h3 class="cando__subttl">❸&ensp;TikTok公式MCN<br>としての取り組み</h3>
             <div class="cando__feature"><span>check</span>
                 <p>公式MCNとして様々なビックプロジェクトをプロデュース</p>
             </div>

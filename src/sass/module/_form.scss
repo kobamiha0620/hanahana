@@ -145,6 +145,13 @@ input[type="submit"]{
 }
 .formnext{
     display: none;
+    &__thanks{
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    &__btnwrap{
+        margin: 0 auto 80px;
+    }
 }
 #wpcf7-f6-o1{
 
@@ -161,4 +168,35 @@ form.sent{
 
         }
     }
+}
+
+//追記
+.form{
+    &__sentxt{
+        @include var.fz(16);
+        line-height: 1.6;
+        text-align: center;
+        margin-top: 20px;
+        br{
+            display: block;
+        }
+    }
+    &__tiktok{
+        color: #FE2C55;
+        &--wrapper{
+            text-align: center;
+            margin: 40px auto;
+
+        }
+    }
+    @media screen and (max-width: var.$bp) {
+        &__sentxt{
+            @include var.fz(14);
+            text-align: left;
+            br{
+                display: none;
+            }
+        }
+    }
+
 }

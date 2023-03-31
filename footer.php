@@ -33,6 +33,7 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
       $_WP_FOOTER = $f;
     } ?>
 
+<script src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/js/today.js"></script>
 
 
 </body>

@@ -101,10 +101,17 @@ get_template_part('tmp/body-top'); ?> -->
 <header class="header">
   <h1><a href="https://twinplanet.co.jp/" class="header__tp" rel="noopener noreferrer">tiktokならTWIN PLANET ツインプラネット</a></h1>
   
-  <a href="#form" class="header__toform">
+  <?php if ( is_page( array( 'download', 'thankyouforevents' ) ) ) : ?>
+
+  <span class="header__kari">
+    
+  </span>
+
+<?php else: ?>
+    <a href="#form" class="header__toform">
     資料ダウンロード
   </a>
-  
+<?php endif; ?>
   
 </header>
 <main>

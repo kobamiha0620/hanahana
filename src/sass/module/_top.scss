@@ -77,13 +77,13 @@ body {
     overflow: hidden;
 
     &__top {
-        animation: flowing 32s linear infinite;
+        animation: flowing 46s linear infinite;
         transform: translateX(100%);
         display: flex;
     }
 
     &__btm {
-        animation: flowing2 32s linear infinite;
+        animation: flowing2 46s linear infinite;
         transform: translateX(100%);
         display: flex;
     }
@@ -199,7 +199,7 @@ body {
         margin: 0 auto;
         width: 100%;
         max-width: 824px;
-        padding: 73px 0 182px;
+        padding: 90px 0;
     }
 
     &__subttl {
@@ -271,7 +271,6 @@ body {
     }
 
     &__introduce {
-        margin-bottom: 130px;
 
         img {
             width: 116px;
@@ -334,7 +333,7 @@ body {
         &--list {
             display: flex;
             justify-content: center;
-            margin: 30px 0 50px;
+            margin: 30px 0 54px;
 
             li {
                 max-width: 115px;
@@ -613,7 +612,7 @@ body {
         margin: 0 auto;
         width: 100%;
         max-width: 824px;
-        padding: 80px 0 88px;
+        padding: 73px 0 88px;
     }
 
     &__subttl {
@@ -1480,12 +1479,44 @@ body {
 
 
 //webp対応
-@include var.webpBg('.fv', './images/img_fvbg');
+@include var.webpBg('.fv', './images/img_fvbg2');
 @include var.webpBg('.fv__txtblc--badge', './images/badge', 'png');
 
 
 
 @media screen and (max-width: var.$bp) {
-    @include var.webpBg('.fv', './images/bg_fvsp');
+    @include var.webpBg('.fv', './images/bg_fvsp3');
+
+}
+
+input, textarea{
+    background-color: #FFF;
+}
+
+a{
+&:hover{
+    opacity: 0.7;
+}
+}
+#formbtn{
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.header__kari{
+    display: inline-block;
+    height: 79px;
+    width: 10px;
+    @media screen and (max-width: var.$bp) {
+        height: 12vw;
+
+    }
+
+  }
+@media screen and (min-width: 1024px) {
+    .cando__numblc{
+        margin-bottom: 90px;
+    }
+
 
 }

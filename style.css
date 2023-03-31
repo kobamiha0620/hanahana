@@ -249,12 +249,12 @@ body {
   overflow: hidden;
 }
 .fluidtxt__top {
-  animation: flowing 32s linear infinite;
+  animation: flowing 46s linear infinite;
   transform: translateX(100%);
   display: flex;
 }
 .fluidtxt__btm {
-  animation: flowing2 32s linear infinite;
+  animation: flowing2 46s linear infinite;
   transform: translateX(100%);
   display: flex;
 }
@@ -357,7 +357,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 824px;
-  padding: 73px 0 182px;
+  padding: 90px 0;
 }
 .cando__subttl {
   color: #FFF;
@@ -421,9 +421,6 @@ body {
   letter-spacing: -0.2;
   margin-top: -10px;
 }
-.cando__introduce {
-  margin-bottom: 130px;
-}
 .cando__introduce img {
   width: 116px;
   height: 145px;
@@ -482,7 +479,7 @@ body {
 .cando__introduce--list {
   display: flex;
   justify-content: center;
-  margin: 30px 0 50px;
+  margin: 30px 0 54px;
 }
 .cando__introduce--list li {
   max-width: 115px;
@@ -733,7 +730,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 824px;
-  padding: 80px 0 88px;
+  padding: 73px 0 88px;
 }
 .whytk__subttl {
   color: #FFF;
@@ -1465,11 +1462,11 @@ body {
   }
 }
 .is-no-webp .fv {
-  background-image: url(./images/img_fvbg.jpg);
+  background-image: url(./images/img_fvbg2.jpg);
 }
 
 .is-webp .fv {
-  background-image: url(./images/img_fvbg.webp);
+  background-image: url(./images/img_fvbg2.webp);
 }
 
 .is-no-webp .fv__txtblc--badge {
@@ -1482,10 +1479,38 @@ body {
 
 @media screen and (max-width: 768px) {
   .is-no-webp .fv {
-    background-image: url(./images/bg_fvsp.jpg);
+    background-image: url(./images/bg_fvsp3.jpg);
   }
   .is-webp .fv {
-    background-image: url(./images/bg_fvsp.webp);
+    background-image: url(./images/bg_fvsp3.webp);
+  }
+}
+input, textarea {
+  background-color: #FFF;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+#formbtn:hover {
+  opacity: 0.7;
+}
+
+.header__kari {
+  display: inline-block;
+  height: 79px;
+  width: 10px;
+}
+@media screen and (max-width: 768px) {
+  .header__kari {
+    height: 12vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cando__numblc {
+    margin-bottom: 90px;
   }
 }
 input[type=submit] {
@@ -1643,6 +1668,13 @@ input[type=submit] {
 .formnext {
   display: none;
 }
+.formnext__thanks {
+  text-align: center;
+  margin: 0 auto 30px;
+}
+.formnext__btnwrap {
+  margin: 0 auto 80px;
+}
 
 form.sent p {
   display: none;
@@ -1653,6 +1685,32 @@ form.sent .formnext {
 }
 form.sent .formnext p {
   display: block !important;
+}
+
+.form__sentxt {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 20px;
+}
+.form__sentxt br {
+  display: block;
+}
+.form__tiktok {
+  color: #FE2C55;
+}
+.form__tiktok--wrapper {
+  text-align: center;
+  margin: 40px auto;
+}
+@media screen and (max-width: 768px) {
+  .form__sentxt {
+    font-size: 0.875rem;
+    text-align: left;
+  }
+  .form__sentxt br {
+    display: none;
+  }
 }
 
 /* 共通サイズ */
